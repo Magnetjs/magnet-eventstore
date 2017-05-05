@@ -1,0 +1,44 @@
+{
+  "name": "magnet-eventstore",
+  "version": "0.1.0",
+  "description": "Magnet adapter for eventstore",
+  "keywords": [
+    "magnet",
+    "magnetjs",
+    "eventstore"
+  ],
+  "homepage": "https://github.com/magnetjs/magnet-eventstore#readme",
+  "bugs": {
+    "url": "https://github.com/magnetjs/magnet-eventstore/issues"
+  },
+  "author": "Kieve Chua <kievechua@gmail.com> (https://github.com/kievechua)",
+  "files": [
+    "README",
+    "CHANGELOG.md",
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "repository": "magnetjs/magnet-eventstore",
+  "scripts": {
+    "start": "fly",
+    "build": "fly build",
+    "dist": "npm run build && npm publish"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "eventstore": "^1.12.2",
+    "magnet-core": "^3.9.0"
+  },
+  "devDependencies": {
+    "fly": "^2.0.6",
+    "fly-clear": "^1.0.1",
+    "fly-esnext": "^2.0.1",
+    "fly-flatten": "^1.0.1",
+    "fly-typescript": "^1.1.0",
+    "fly-watch": "^1.1.1"
+  },
+  "engines": {
+    "node": ">=6.9.5"
+  },
+  "license": "MIT"
+}

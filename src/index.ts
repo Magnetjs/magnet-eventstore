@@ -3,8 +3,10 @@ import * as eventstore from 'eventstore'
 import * as _promise from 'bluebird'
 
 export default class MagnetEventstore extends Module {
-  get moduleName () { return 'eventstore' }
-  get defaultConfig () { return __dirname }
+  init () {
+    this.moduleName = 'eventstore'
+    this.defaultConfig = __dirname
+  }
 
   async setup () {
     this.insert(eventstore(this.config))
